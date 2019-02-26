@@ -32,7 +32,6 @@ class CookBook
         amount: qty.to_s + " " + key.unit,
         calories: qty * key.calories}
       list << info
-      list
     end
       list_of_ingredients = list_of_ingredients.sort_by{ |info| info[:calories]}.reverse
       list_of_ingredients.each{ |info| info.delete(:calories)}
