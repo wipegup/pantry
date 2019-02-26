@@ -23,4 +23,8 @@ class CookBookTest < MiniTest::Test
   def test_it_exists
     assert_instance_of CookBook, @cookbook
   end
+
+  def test_summary_starts_empty
+    assert_equal [], @cookbook.summary
+  end
 end
