@@ -65,7 +65,7 @@ class CookBookTest < MiniTest::Test
   end
 
   def test_summarize_ingredients
-    expected = []{ingredient:"Macaroni",
+    expected = [{ingredient:"Macaroni",
                    amount: "8 oz"},
                    {ingredient:"Cheese",
                      amount: "2 C"}]
