@@ -21,4 +21,8 @@ class PantryTest < MiniTest::Test
   def test_stock_starts_empty
     assert_equal ({}), @pantry.stock
   end
+
+  def test_stock_check_default_returns_to_0
+    assert_equal 0, @pantry.stock_check(@cheese)
+  end
 end
