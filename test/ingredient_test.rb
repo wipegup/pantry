@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require './lib/ingredient'
 
 class IngredientTest < MiniTest::Test
 
