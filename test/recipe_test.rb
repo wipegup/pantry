@@ -16,4 +16,8 @@ class RecipeTest <MiniTest::Test
   def test_it_has_name
     assert_equal "Mac and Cheese", @mac_and_cheese.name
   end
+
+  def test_ingredients_starts_empty
+    assert_equal ({}), @mac_and_cheese.ingredients
+  end
 end
