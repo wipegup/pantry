@@ -21,6 +21,6 @@ class CookBookTest < MiniTest::Test
   end
 
   def test_it_exists
-    assert_instance_of CookBook, @CookBook
+    assert_instance_of CookBook, @cookbook
   end
 end
