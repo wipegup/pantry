@@ -7,4 +7,8 @@ class Recipe
     @ingredients = {}
   end
 
+  def add_ingredient(ingredient, quantity)
+    @ingredients[ingredient] = quantity
+  end
+
 end
