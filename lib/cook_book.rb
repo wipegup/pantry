@@ -16,6 +16,12 @@ class CookBook
   end
 
   def recipe_summary(recipe)
-
+    {
+    name: recipe.name,
+    details:{
+      total_calories: recipe.total_calories,
+      ingredients: summarize_ingredients(recipe.ingredients_required)
+      }
+    }
   end
 end

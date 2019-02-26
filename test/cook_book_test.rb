@@ -51,4 +51,25 @@ class CookBookTest < MiniTest::Test
                   ]
     assert_equal expected, @cookbook.summary
   end
+
+  def test_recipe_summary_creates_summary
+    expected = { name: "Mac and Cheese",
+                 details: {
+                   ingredients:[{ingredient:"Macaroni",
+                                  amount: "8 oz"},
+                                  {ingredient:"Cheese",
+                                    amount: "2 C"}],
+                   total_calories: 440
+                   }}
+    assert_equal expected, @cookbook.recipe_summary(@mac_and_cheese)
+  end
+
+  def test_summarize_ingredients
+    expected = {ingredient:"Macaroni",
+                   amount: "8 oz"},
+                   {ingredient:"Cheese",
+                     amount: "2 C"}]
+    actual = @cookbook.summarize_ingredients(@mac_and_cheese.ingredients_required)
+    assert_equal expected, actual
+  end
 end
