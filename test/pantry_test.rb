@@ -17,4 +17,8 @@ class PantryTest < MiniTest::Test
   def test_it_exists
     assert_instance_of Pantry, @pantry
   end
+
+  def test_stock_starts_empty
+    assert_equal ({}), @pantry.stock
+  end
 end
