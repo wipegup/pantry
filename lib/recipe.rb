@@ -1,14 +1,14 @@
 require './lib/ingredient'
 
 class Recipe
-  attr_reader :name, :ingredients
+  attr_reader :name, :ingredients_required
   def initialize(name)
     @name = name
-    @ingredients = {}
+    @ingredients_required = {}
   end
 
   def add_ingredient(ingredient, quantity)
-    @ingredients[ingredient] = quantity
+    @ingredients_required[ingredient] = quantity
   end
 
 end
